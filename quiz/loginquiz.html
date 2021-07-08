@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Account</title>
+<style>
+body
+{
+	background-color:#0a0a0a;
+}
+table
+{
+	border:1px white;
+	margin-top:200px;
+	margin-left:500px;
+	background-color:white;
+	padding:20px
+}
+#btn
+{
+	width:200px;
+	height:50px;
+	background-color:#e31e1e;
+}
+
+</style>
+</head>
+<body>
+	<form name=frmNewAcc>
+		<table border=0 cellspacing=5px>
+	<tr>
+		<th colspan=3><input class=in =text name=txtuname placeholder="Enter your account name"></th>
+	</tr>
+	<tr>
+		<th colspan=3><input class=in type=password name=txtupass placeholder="Enter your password"></th>
+	</tr>
+	
+	<tr>
+		<th colspan=3><input id=btn type=button value="Create new account"></th>
+		<a href="Login task 1.html">Go back to login</a>
+	</tr>
+
+	
+</table>
+</form>
+<script>if (localStorage.clickcount) {
+    localStorage.clickcount = Number(localStorage.clickcount) + 1;
+  } else {
+    localStorage.clickcount = 1;
+  }
+  document.getElementById("result").innerHTML = "You have clicked the button " +
+  localStorage.clickcount + " time(s).";</script>
+</body>
+</html>
